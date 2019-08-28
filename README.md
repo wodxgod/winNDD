@@ -13,7 +13,7 @@ $ python -m pip install -r requirements.txt
 ```
 
 # Running NDD
-To you the script, you simply use the Python command.
+To run the script, you simply use the Python command:
 ```bash
 $ python ndd.py
 ```
