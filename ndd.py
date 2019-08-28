@@ -2,6 +2,7 @@
 #Github: https://github.com/WodXTV/
 #Twitter: https://twitter.com/wodxofficial/
 #Discord: wodx#0666
+
 import os, subprocess, ctypes, re, socket, requests, json
 from colorama import Fore, init
 
@@ -19,6 +20,7 @@ def print_banner():
 
 def main():
     init(convert=True)
+    
     if os.name != 'nt':
         print(f'{Fore.RED}[-] {Fore.RESET}Please run NDD.py on a Windows machine')
         return
