@@ -13,10 +13,10 @@ $ cd .\NDD\
 $ python -m pip install -r requirements.txt
 ```
 
-# Running tNDD
+# Running NDD
 To you the script, you simply use the Python command.
 ```bash
-$ python NDD.py
+$ python ndd.py
 ```
 
 # Developer
