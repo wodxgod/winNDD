@@ -1,4 +1,4 @@
-# NDD - Network Device Discovery
+<h1 align="center">NDD - Network Device Discovery Tool</h1>
 **NDD** is a simple local area network scanner for Windows to discover other devices. It uses the [ARP protocol](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) in order to get the devices IPv4 and MAC address.
 
 NDD will return interface, IPv4 address of device, MAC address of device and MAC Vendor of device in a list.
