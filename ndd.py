@@ -19,6 +19,9 @@ def print_banner():
 
 def main():
     init(convert=True)
+    if os.name != 'nt':
+        print(f'{Fore.RED}[-] {Fore.RESET}Please run NDD.py on a Windows machine')
+        return
     
     ctypes.windll.kernel32.SetConsoleTitleW('NDD by WodX')
     
