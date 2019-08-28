@@ -8,7 +8,7 @@ from colorama import Fore, init
 devices = {}
 
 def print_banner():
-    subprocess.call('cls' if os.name == 'nt' else 'clear', shell = True)
+    subprocess.call('cls' if os.name == 'nt' else 'clear', shell=True)
     print(r'''{0}
    .               .
  .´  ·  .     .  ·  `.  NDD 2.0.0
@@ -18,16 +18,16 @@ def print_banner():
     '''.format(Fore.GREEN, Fore.WHITE, Fore.CYAN, Fore.RESET))
 
 def main():
-    init(convert = True)
+    init(convert=True)
     
     ctypes.windll.kernel32.SetConsoleTitleW('NDD by WodX')
     
     print_banner()
     print(f'{Fore.GREEN}Scanning for local network devices ...{Fore.RESET}')
     
-    subprocess.Popen('ping %s -n 1' % socket.gethostbyname(socket.gethostname()), shell = True, stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+    subprocess.Popen('ping %s -n 1' % socket.gethostbyname(socket.gethostname()), shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     
-    process = subprocess.Popen('@arp -a', shell = True, stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+    process = subprocess.Popen('@arp -a', shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output = (process.stdout.read() + process.stderr.read()).decode()
     output_split = output.split('\n')
 
