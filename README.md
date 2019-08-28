@@ -1,6 +1,6 @@
 <h1 align="center">NDD - Network Device Discovery Tool</h1>
 
-**NDD** is a simple local area network scanner for Windows to discover other devices. It uses the [ARP protocol](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) in order to get the devices IPv4 and MAC address. It will return interface, IPv4 address of device, MAC address of device and MAC Vendor of device in a easily readable list.
+**NDD** is a simple local area network scanner for Windows to discover other devices. It uses the [ARP protocol](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) in order to get the devices IPv4 and MAC address. It will return network interface, IPv4 address, MAC address and MAC Vendor of every device on the local network, in a easily readable list.
 
 # Installation
 In order to run the scrip, you need to have Python 3 installed. Download the latest version of Python 3 via [this link](https://www.python.org/downloads/)
