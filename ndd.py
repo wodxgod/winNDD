@@ -32,7 +32,7 @@ def main():
     
     subprocess.Popen('ping %s -n 1' % socket.gethostbyname(socket.gethostname()), shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     
-    process = subprocess.Popen('@arp -a', shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    process = subprocess.Popen('arp -a', shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output = (process.stdout.read() + process.stderr.read()).decode()
     output_split = output.split('\n')
 
