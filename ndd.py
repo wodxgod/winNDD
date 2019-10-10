@@ -1,7 +1,7 @@
 #Network Device Discover by WodX
 #Github: https://github.com/WodXTV/
-#Twitter: https://twitter.com/wodxofficial/
-#Discord: wodx#0666
+#Twitter: https://twitter.com/wodsex/
+#Discord: wodx#6724
 
 import os, subprocess, ctypes, re, socket, requests, json
 from colorama import Fore, init
